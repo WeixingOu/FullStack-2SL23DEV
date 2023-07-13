@@ -1,0 +1,40 @@
+// Tipografía
+$text-font-family: Arial, Helvetica, san-serif;
+$headings-font-family: 'Kaisei HarunoUmi', sans-serif;
+$headings-font-weight: 700;
+$h2-font-size: 3rem;
+$h3-font-size: 2.6rem;
+
+// Colores
+$morado: #a435f0;
+$gris: #f8f9fb;
+$gris-dark: #6a6f73;
+$naranja: #b4690e;
+$blanco: #fff;
+$negro: #000;
+
+$secondary: $naranja;
+$success: $morado;
+$light: $gris;
+$dark: $negro;
+
+// Nav Links
+$nav-link-color: $gris-dark;
+$nav-link-hover-color: $dark;
+$nav-link-font-weight: 700;
+$nav-link-font-size: 0.9rem;
+$nav-link-padding-y:  .25rem;
+
+// Form Control
+$input-focus-box-shadow:  none;
+
+// Cards
+$card-spacer-x: 0;
+$card-border-radius: 0;
+$card-border-width: 0;
+
+// Css Grid 
+$enable-cssgrid: true;
+
+// Bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,88 @@
+/* Components */
+
+.card{
+    padding: 40px;
+    background: $white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(221, 221, 221, 0.3);
+}
+
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+
+
+
+// FORMULARIOS
+form *{
+    font-family: $font1;
+}
+
+form input{
+    padding: 10px 15px;
+    border: 1px solid map-get($grays , 400);
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input:focus{
+    border: 1px solid $primary;
+    outline: none;
+}
+
+
+
+
+// BOTONES
+
+.btn{
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    transition: all .3s;
+}
+
+@mixin btn($bg, $text) {
+    background: $bg;
+    color: $text;
+}
+
+
+@each $nombre, $color in $colores {
+    .btn-#{$nombre}{
+         @if($nombre == 'info'){
+              @include btn($color, $black);
+         }@else if ($nombre == 'warning'){
+              @include btn($color, $black);
+         }@else if ($nombre == 'light'){
+              @include btn($color, $black);
+         }@else{
+              @include btn($color, $white);
+         }
+    }
+
+
+    .btn-#{$nombre}:hover{
+         background: darken($color, 10%);
+    }
+
+}

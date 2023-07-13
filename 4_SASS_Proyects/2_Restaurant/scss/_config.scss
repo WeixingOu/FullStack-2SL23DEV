@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@import url(https://fonts.googleapis.com/css?family=Merienda:300,regular,500,600,700,800,900);
+
+$white : #fff;
+$gris100: #dedede;
+$gris200: #ccc;
+$gris300: #999;
+$gris400: #666;
+$gris500: #444;
+$gris600: #222;
+$black: #000;
+$primary-color: #ff7b00;
+$primary-color-dark: darken($primary-color, 10);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin dflex($jtf-content, $alg-item, $f-flow) {
+    display: flex;
+    justify-content: $jtf-content;
+    align-items: $alg-item;
+    flex-flow: $f-flow;
+}
+
+@mixin dgrid($column, $row, $gap) {
+    display: grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    gap:$gap;
+}
+
+@mixin btn($bg, $text) {
+    background: $bg;
+    color: $text;
+}
+
+@mixin icons($container, $width, $height) {
+    width: $container;
+    a {
+        width: $width;
+        height: $height;
+    }
+}
+
+%overlay {
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.35);
+        }
+        * {
+            position: relative;
+        }
+}
+
+%btn-base {
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.btn-white{
+    @extend %btn-base;
+    @include btn($white, $primary-color);
+
+    &:hover{
+        background: $primary-color;
+        color: $white;
+    }
+}
+.btn-primary{
+    @extend %btn-base;
+    @include btn($primary-color, $white);
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+
+
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto 25px;
+  width: 950px;
+  display: flex;
+  align-items: center;
+}
+
+input, 
+button {
+  border: none;
+  outline: none;
+  outline-offset: 0;
+}
+
+button {
+  background: initial;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********** HEADER **********/
+header {
+  padding-top: 30px;
+}
+
+header .logo {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+header .logo a {
+  display: inline-block;
+  width: 102px;
+  height: 20px;
+  background: url("../img/logo.png") no-repeat left top/cover;
+}
+
+header .search {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  border: 1px solid #c3c3c3;
+  position: relative;
+}
+
+header .search form input {
+  width: 240px;
+  height: 20px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+header .search form input::placeholder {
+  color: #cccccc;
+}
+
+header .search form button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #cccccc;
+}
+
+header nav {
+  margin-left: auto;
+  margin-top: 2px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url("../img/nav_logo.png") no-repeat;
+}
+
+header nav ul li a.link-read {
+  background-position: 0 0;
+}
+
+header nav ul li a.link-movie {
+  background-position: -60px 0;
+}
+
+header nav ul li a.link-music {
+  background-position: -120px 0;
+}
+
+header nav ul li a.link-group {
+  background-position: -180px 0;
+}
+
+header nav ul li a.link-fm {
+  background-position: -240px 0;
+}
+
+header nav ul li a.link-event {
+  background-position: -300px 0;
+}
+
+header nav ul li a.link-thing {
+  background-position: -360px 0;
+}
+
+header nav ul li a.link-market {
+  background-position: -420px 0;
+  width: 44px;
+}
+
+/********** BANNER **********/
+.banner {
+  height: 300px;
+  background-image: url(/img/banner-bg.jpg);
+  background-size: contain;
+  background-position: calc(50% - 305px) top;
+  background-repeat: no-repeat;
+  background-color: #edf4ed;
+  margin-bottom: 25px;
+}
+
+.banner .banner-content {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.banner .banner-content .app-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner .banner-content .app-slogan .app-title {
+  font-size: 24px;
+  color: #111;
+  line-height: 24px;
+  margin: 7px 0;
+}
+
+.banner .banner-content .app-slogan .app-title span {
+  color: #111;
+}
+
+.banner .banner-content .app-slogan .app-download {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner .banner-content .app-slogan .app-download .app-link {
+  background: #00b51d;
+  color: #fff;
+  border-radius: 2px;
+  line-height: 1;
+  font-size: 12px;
+  padding: 9px 17.4px;
+}
+
+.banner .banner-content .app-slogan .app-download .app-qr {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner .banner-content .app-slogan .app-download .app-qr-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #48aa0d;
+  border-radius: 2px;
+}
+
+.banner .banner-content .app-slogan .app-download .app-qr .app-qr-expand {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 20px 5px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  background: #fff;
+  line-height: 13px;
+}
+
+.banner .banner-content .app-slogan .app-download .app-qr .app-qr-expand .app-qr-code {
+  width: 160px;
+  height: 160px;
+}
+
+.banner .banner-content .login-menu {
+  width: 305px;
+  height: 305px;
+}
+
+.banner .banner-content .app-slogan .app-download .app-qr:hover .app-qr-expand {
+  display: block;
+
+}
+
+
+/********** SECTION **********/
+section:not(:first-child):nth-child(2n+1) {
+  padding: 40px 0 20px;
+  background: #f7f7f7;
+}
+
+section:not(:first-child):nth-child(2n) {
+  padding: 10px 0;
+}
+section{
+  margin-bottom: 30px;
+}
+
+section .aside-left{
+  width: 100px;
+}
+
+section .aside-right{
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+}
+section .aside-right .ad{
+  margin: 10px 0;
+}
+section h3{
+  color: #072;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+section h3 span{
+  color: #666666;
+  line-height: 150%;
+}
+section h3 span a{
+  color: #37a;
+
+  font-size: 12px;
+}
+section h3 span a:hover,section .aside-right .hot-list a:hover,.sns .album ul li a:hover,.sns .notes a:hover{
+  color: #fff;
+  background: #37a;
+}
+section h3 span a:active,section .aside-right .hot-list a:active,.sns .album ul li a:active,.sns .notes a:active{
+  color: #fff;
+  background: #f93;
+}
+section .aside-right .hot-list a{
+  color: #37a;
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.3
+}
+section .aside-right .hot-list span{
+  color: #aaaaaa;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+}
+section .aside-right .hot-list li{
+  margin-bottom: 15px;
+}
+section .content{
+  display: flex;
+  position: relative;
+  
+}
+/********** SECTION SNS **********/
+.sns{
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto ;
+
+  width: 950px;
+}
+.sns .content h3{
+  position: absolute;
+}
+.sns img{
+  width: 100%;
+}
+.sns .album{
+  width: 350px;
+}
+.sns .album ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.sns .album ul li{
+  width: 170px;
+}
+.sns .album ul li div{
+  overflow: hidden;
+  height: 170px;
+}
+.sns .album ul li a{
+  color: #37a;
+  font-size: 12px;
+}
+.sns .album ul li span{
+  color: #999;
+  font-size: 12px;
+}
+.sns .notes{
+  width: 275px;
+}
+.sns .album-notes{
+  display: flex;
+  gap: 30px;
+  margin-top: 35.5px;
+}
+.sns .notes a{
+  color: #37a;
+  font-size: 12px;
+}
+.sns .notes span{
+  color: #999;
+  display: inline-block;
+  font-size: 12px;
+}
+.sns .notes p{
+  color: #666;
+  font-size: 12px;
+  line-height: 1.62;
+}
+.sns .notes ul li{
+  margin-bottom: 12px;
+}
+/********** SECTION TIME **********/
+.time{
+  width: 950px;
+  margin: 0 auto;
+}
+.time .main{
+  display: grid;
+  grid-template-columns: repeat(5,  minmax(max-content, 1fr));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 60px;
+}
+.time .main .time-element{
+  width: 100px;
+  text-align: center;
+}
+.time .main .time-element a img{
+  width: 100%;
+  height: 141px;
+}
+.time .main .time-element a.title{
+  color: #333333;
+    font-size: 13px;
+    line-height: 1.38;
+
+}
+.time .main .time-element span{
+  color: #999999;
+    line-height: 1;
+    margin-top: 10px;
+    display: block;
+}

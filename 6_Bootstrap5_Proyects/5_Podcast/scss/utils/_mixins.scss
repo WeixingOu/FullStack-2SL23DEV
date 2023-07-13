@@ -1,0 +1,26 @@
+@mixin bgImage($url, $lgColor){
+    background-image: linear-gradient( transparentize($lgColor, .3%) 0%, transparentize($lgColor, .3%) 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+@mixin headingBorder($color, $bgColor){
+    color: $color;
+
+    &::after {
+        content: '';
+        height: 1rem;
+        width: 100%;
+        background-color: $bgColor;
+        display: block;
+        margin-top: -1.5rem;
+    }
+}
+
+@mixin bgIcono($url){
+    background-image: url($url);
+    background-size: 10rem;
+    background-position: 50% 2rem;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Nombre Portfolio</title>
+
+    <link rel="shortcut icon" href="/img/logo.png" type="img/x-icon" />
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <!-- Menu principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple py-4 py-lg-4">
+        <div class="container">
+
+            <!-- Mi nombre -->
+            <b class="fs-4 text-white text-uppercase">Mi nombre</b>
+
+            <!-- Boton responsive -->
+            <button class="navbar-toggler bg-purple-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fs-6 text-white">MENU</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu links -->
+            <div class="collapse navbar-collapse pb-2 pb-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold mx-2 active" aria-current="page" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#">SOBRE MÍ</a>
+                    </li>
+                    <li class="nav-item fw-bold mx-2">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="container-fluid py-5 bg-purple-light">
+        <div class="img-area m-auto py-5">
+            <img src="img/avataaars.svg" class="w-100 h-100">
+        </div>
+
+        <div class="text-center">
+            <h1 class="display-3 text-uppercase text-white fw-bold">Mi nombre</h1>
+            <h2 class="text-white text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+            <p class="text-white fs-4 py-4">Maquetador/a Web - Entusiaste - Audidacta</p>
+        </div>
+    </header>
+    
+    <main class="container-fluid py-5 px-0">
+        <!-- Proyectos -->
+        <section class="proyectos">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="text-center py-4">
+                        <h1 class="text-blue text-center fw-bold display-5">PORTFOLIO</h1>
+                        <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                    </div>
+                </div>
+
+                <article class="row py-5">
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/lemon-pie.jpeg" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">Lemon Pie</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalLemon"></button>
+                        </div>
+                    </div>
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/Batman.png" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">CV Batman</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalBatman"></button>
+                        </div>
+                    </div>
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/super.png" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">Supers</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalSupers"></button>
+                        </div>
+                    </div>
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/petshop.jpeg" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">Pet Shop</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalPet"></button>
+                        </div>
+                    </div>
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/piza.jpeg" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">Pizzería</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalPizza"></button>
+                        </div>
+                    </div>
+
+                    <div class="card-container col-12 col-md-6 col-lg-4 mb-5 position-relative">
+                        <div class="card border-0">
+                            <img src="img/gameshop.jpeg" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-dark fw-bolder fs-4">Game Shop</h5>
+                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 text-center">
+                            <button class="w-50 h-100 bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#modalGame"></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sobre mi -->
+        <section class="about py-5 bg-purple-light">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="text-center py-4">
+                        <h1 class="text-white text-center fw-bold display-5 text-uppercase">Sobre mí</h1>
+                        <h2 class="text-white text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                    </div>
+                </div>
+                <div class="row g-0 gx-5 w-100 m-auto p-0 p-md-0 p-lg-6">
+                    <div class="col-12 col-lg-6">
+                            <p class="text-white fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia soluta facere doloribus cum! Corrupti provident, molestiae unde a ullam soluta minima beatae, accusantium suscipit rem corporis hic eum tempore nulla.</p>
+                    </div>
+                    
+                    <div class="col-12 col-lg-6">
+                            <p class="text-white fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit laborum quod vero tenetur quam molestiae aliquam temporibus perspiciatis.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center py-5">
+                    <button class="btn btn-outline-light btn-lg border border-2 py-3 px-4"><i class="bi bi-download"></i> Descargar CV</button>
+                </div>
+        </section>
+
+        <!-- Contactame -->
+        <section class="contact pt-5">
+            <div class="row g-0">
+                <div class="col-12">
+                    <div class="text-center py-4">
+                        <h1 class="text-blue text-center fw-bold display-5">CONTACTAME</h1>
+                        <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                    </div>
+                </div>
+            </div>
+
+            <form class="row g-0 p-4 w-lg-50 m-auto">
+                <div class="col-12 mb-3 py-3">
+                    <label class="text-secondary fs-4 fw-bold-light" for="name">Nombre Completo</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" id="name">
+                </div>
+                
+                <div class="col-12 mb-3 py-3">
+                    <label class="text-secondary fs-4 fw-bold-light"  for="email">Email</label>
+                    <input type="text" class="form-control border-0 border-bottom border-2" id="email">
+                </div>
+
+                <div class="col-12 mb-3 py-3">
+                    <label class="text-secondary fs-4 fw-bold-light"  for="tel">Número de Teléfono</label>
+                    <input type="tel" class="form-control border-0 border-bottom border-2" id="tel">
+                </div>
+
+                <div class="col-12 mb-3 py-3">
+                    <label class="text-secondary fs-4 fw-bold-light"  for="msj">Mensaje</label>
+                    <textarea class="form-control border-0 border-bottom border-2 h-75" id="msj"></textarea>
+                </div>
+
+                <div class="p-0">
+                    <button type="button" class="btn btn-secondary rounded-2 py-3 px-4 fs-5" data-bs-dismiss="modal">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Menu sociales -->
+    <section class="bg-blue-light">
+        <div class="row g-0 py-4 mx-lg-5">
+            <div class="col-12 col-lg-4 py-5">
+                <div class="text-center text-white">
+                    <h3 class="text-uppercase fs-4 fw-bold mb-3">Mi lugar</h3>
+                    <h4 class="fs-5 m-0">Calle N</h4>
+                    <h4 class="fs-5 m-0">Ciudad, Estado CP</h4>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 py-5">
+                <div class="text-center text-white">
+                    <h3 class="text-uppercase fs-4 fw-bold mb-3">Sigamos conectados</h3>
+                </div>
+                
+                <div class="fs-6 d-flex justify-content-between align-items-center w-50 w-lg-50 mx-auto">
+                    <a class="d-flex justify-content-center align-items-center rounded-circle border border-2 icon-area" href="#!"><i class="bi bi-facebook text-white"></i></a>
+                    <a class="d-flex justify-content-center align-items-center rounded-circle border border-2 icon-area" href="#!"><i class="bi bi-instagram text-white"></i></a>
+                    <a class="d-flex justify-content-center align-items-center rounded-circle border border-2 icon-area" href="#!"><i class="bi bi-linkedin text-white"></i></a>
+                    <a class="d-flex justify-content-center align-items-center rounded-circle border border-2 icon-area" href="#!"><i class="bi bi-github text-white"></i></a>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 py-5">
+                <div class="text-center text-white">
+                    <h3 class="text-uppercase fs-4 fw-bold mb-3">Sobre mí</h3>
+                    <p class="fs-5 m-0">Soy una persona creativa y con ansias de aprender. Tengo conocimientos de HTML, CSS y Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="d-flex justify-content-center align-items-center bg-blue-dark text-white py-4">
+        <p class="m-0" style="font-size: 0.85rem;">Copyright &copy; Mi sitio 2023</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLemon" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">Lemon Pie</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/lemon-pie.jpeg" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBatman" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">CV Batman</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/Batman.png" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSupers" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">Supers</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/super.png" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPet" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">Pet Shop</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/petshop.jpeg" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPizza" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">Pizzería</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/piza.jpeg" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGame" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="text-center col-12">
+                            <h1 class="text-blue text-center fw-bold display-6">Game Shop</h1>
+                            <h2 class="text-blue text-center d-inline-block"><i class="bi bi-star-fill px-3"></i></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center px-5">
+                            <img src="img/gameshop.jpeg" class="w-50 h-50">
+                            <p class="text-dark fw-bold-light mx-auto p-lg-5 w-75">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro possimus obcaecati a, aliquam ipsum deleniti.</p>
+                            <div class="col-12 border-0 d-flex justify-content-center align-items-center text-white p-0 mb-4">
+                                <button type="button" class="bg-purple-light border-0 rounded-2 text-white py-1 px-3"><i class="bi bi-x fs-5 align-self-center"></i> Visitar Sitio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+
+$font-primary:Arial,
+Helvetica,
+sans-serif;
+$font-secondary:Impact,
+Haettenschweiler,
+'Arial Narrow Bold',
+sans-serif;
+
+* {
+    box-sizing: border-box;
+
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+@mixin box-center {
+    width: 80%;
+    margin: auto;
+}
+
+@mixin dflex($jtf-content, $alg-item, $f-flow) {
+    display: flex;
+    justify-content: $jtf-content;
+    align-items: $alg-item;
+    flex-flow: $f-flow;
+}
+
+@mixin btn($bg, $text) {
+    background: $bg;
+    color: $text;
+}
+
+%btn-base {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    @extend %btn-base;
+    @include btn($bg-primary, black);
+    border: 0.5px dashed black;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: darken($bg-primary, 5);
+    }
+}
+
+%icon-shadow {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+
+    box-shadow: -3px 0px 0px 1px $bg-primary;
+}

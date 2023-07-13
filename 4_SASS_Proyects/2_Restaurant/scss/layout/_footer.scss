@@ -1,0 +1,28 @@
+footer{
+
+    .#{&}-container{
+        @include dgrid(repeat(2, 1fr), auto, 20px);
+        padding: 50px 0;
+        color: $white;
+
+        .info{
+            .icons{
+                @include icons(60%, 50px, 50px);
+            }
+        }
+
+        .contact{
+            .icons{
+                @include icons(40%, 50px, 50px);
+
+                a{
+                    background: transparent;
+
+                    &:hover{
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

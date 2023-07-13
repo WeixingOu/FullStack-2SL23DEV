@@ -1,0 +1,39 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Estilos personalizados
+.carousel.header {
+    height: calc(100vh - 89px);
+
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.carousel-item.overlay {
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.8);
+    }
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-area{
+    width: 100px;
+    height: 100px;
+
+    img{
+        object-fit: cover;
+    }
+}

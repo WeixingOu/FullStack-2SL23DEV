@@ -1,0 +1,51 @@
+/* Grid */
+
+.grid{
+    display:grid;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        grid-template-columns: repeat(#{$i}, 1fr);
+    }
+
+    .span-#{$i}{
+        grid-column: span $i;
+    }
+}
+
+@include desktop(){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    
+        .span-lg-#{$i}{
+            grid-column: span $i;
+        }
+    }
+}
+@include table(){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    
+        .span-md-#{$i}{
+            grid-column: span $i;
+        }
+    }
+}
+@include mobile(){
+    @for $i from 1 through 12 {
+        .col-sm-#{$i}{
+            grid-template-columns: repeat(#{$i}, 1fr);
+        }
+    
+        .span-sm-#{$i}{
+            grid-column: span $i;
+        }
+    }
+}

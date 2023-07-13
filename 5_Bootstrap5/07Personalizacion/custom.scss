@@ -1,0 +1,21 @@
+// VARIABLES
+$primary: #ba4ef8;
+$success: #00ffdd;
+$danger: #5e0000;
+$warning: #da5000;
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+// Estilos agregados por mi
+.midiv{
+     width: 200px;
+     height: 200px;
+     background: lightblue;
+     padding: 40px;
+     overflow: auto;
+}
+

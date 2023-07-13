@@ -1,0 +1,68 @@
+@mixin desktop {
+    @media screen and (max-width:1100px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width:790px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:550px) {
+        @content;
+    }
+}
+
+@include desktop {
+    .about {
+
+        &-container {
+            .content {
+                order: 1;
+                flex: 0 0 100%;
+
+                .icons {
+                    width: 100%;
+                }
+            }
+
+            .image-container {
+                order: 0;
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .card {
+        width: 45%;
+    }
+}
+
+@include mobile {
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        .#{&}-container {
+            @include dgrid(1fr, auto, 20px);
+
+            .info {
+                .icons {
+                    width: 100%;
+                }
+            }
+
+            .contact {
+                .icons {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

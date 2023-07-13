@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+.descuentos {
+
+    &__text {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: -2rem;
+        }
+    }
+}

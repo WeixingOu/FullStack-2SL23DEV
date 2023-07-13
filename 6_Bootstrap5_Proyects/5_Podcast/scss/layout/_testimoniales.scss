@@ -1,0 +1,29 @@
+@use '../custom' as *;
+@use '../utils/mixins';
+
+.testimoniales {
+    h2 {
+        @include mixins.headingBorder($secondary, $primary);
+    }
+
+    .testimonial {
+        border: 0.5rem solid $secondary;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        padding: 2rem 2rem 2rem 7rem !important;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 5rem;
+            height: 5rem;
+            display: block;
+            position: absolute;
+            left: 1rem;
+            background-image: url('/img/comilla.svg');
+            background-size: 4rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}

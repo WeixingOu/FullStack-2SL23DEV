@@ -1,0 +1,38 @@
+@import "base";
+@import "variables";
+@import "mixin";
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name )
+}
+
+body {
+    background-color: $primary-color;
+    color: $text-color;
+
+}
+main{
+    @include flex-center(row);
+    width: 80%-40%;
+    margin: 0 auto;
+    .#{&}-paragraph1 {
+        font-weight: weight(bold);
+        //font-weight: map-get($font-weights, bold);
+        &:hover{
+            color: pink;
+        }
+    }
+    .#{&}-paragraph2 {
+        @extend .main-paragraph1;
+        &:hover{
+            color:$accent-color;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.light {
+    @include theme($light-theme: true);
+}

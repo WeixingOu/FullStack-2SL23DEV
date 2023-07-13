@@ -1,0 +1,4 @@
+.btns{
+    @include dflex(space-between, center, row nowrap);
+    width: 55%;
+}

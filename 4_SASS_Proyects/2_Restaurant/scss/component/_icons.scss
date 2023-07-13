@@ -1,0 +1,14 @@
+.icons{
+    @include dflex(space-between,center,row nowrap);
+
+    a {
+        @include dflex(center, center, row nowrap);
+        background-color: $primary-color;
+        color: $white;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            background-color: $primary-color-dark;
+        }
+    }
+}

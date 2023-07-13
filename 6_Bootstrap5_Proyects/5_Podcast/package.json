@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:sass": "purgecss -css css/app.css -con *.html -o css/app-min.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4"
+  }
+}

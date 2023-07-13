@@ -1,0 +1,220 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bg-purple{
+    background-color: #6B4E71;
+}
+
+.bg-purple-light{
+    background-color: lighten($color: #6B4E71, $amount: 35);
+}
+
+.bg-blue{
+    background-color: #2C3E51;
+}
+
+.bg-blue-light{
+    background-color: lighten($color: #2C3E51, $amount: 15);
+}
+
+.bg-blue-dark{
+    background-color: darken($color: #2C3E51, $amount: 10);
+}
+
+.text-blue{
+    color: #2C3E51;
+}
+
+.fw-bold-light{
+    font-weight: 549.5;
+}
+
+.icon-area{
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    h2{
+        z-index: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: $white;
+            z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 64px;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: $white;
+            z-index: -1;
+            }
+    }
+}
+
+section.proyectos{
+    h2{
+        z-index: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 64px;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+            }
+    }
+
+    .card-container{
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+section.about{
+    h2{
+        z-index: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: $white;
+            z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 64px;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: $white;
+            z-index: -1;
+            }
+    }
+}
+
+section.proyectos{
+    h2{
+        z-index: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 64px;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+            }
+    }
+}
+
+section.contact{
+    @extend .proyectos;
+}
+
+.modal-body{
+    h2{
+        z-index: 0;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 64px;
+            width: 20vmin;
+            height: 4px;
+            border-radius: 10px;
+            background: #2C3E51;
+            z-index: -1;
+            }
+    }
+}
+
+.img-area{
+    width: 350px;
+    height: 350px;
+}
+
+.modal{
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (min-width: 992px){
+    .p-lg-6 {
+        padding:0 14.5rem !important;
+    }
+}
+
+@media (min-width: 992px){
+    .w-lg-50 {
+        width: 50%;
+    }
+}
